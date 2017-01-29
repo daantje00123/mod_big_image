@@ -4,8 +4,8 @@
     <author>Daan van Berkel</author>
     <authorEmail>info@daanvanberkel.nl</authorEmail>
     <authorUrl>http://www.daanvanberkel.nl</authorUrl>
-    <version>1.0.4</version>
-    <creationDate>2017-01-28</creationDate>
+    <version>1.0.5</version>
+    <creationDate>2017-01-29</creationDate>
     <license>MIT</license>
     <copyright>Daan van Berkel 2017</copyright>
     <description>Big image module.</description>
@@ -67,6 +67,16 @@
                     name="font_size"
                     default="50px"
                     label="Font size" />
+
+                <field
+                    type="radio"
+                    name="parallax"
+                    default="0"
+                    label="Enable parallax effect"
+                    class="btn-group btn-group-yesno">
+                        <option value="1">JYES</option>
+                        <option value="0">JNO</option>
+                </field>
             </fieldset>
         </fields>
     </config>
