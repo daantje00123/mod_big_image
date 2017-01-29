@@ -4,7 +4,7 @@
     <author>Daan van Berkel</author>
     <authorEmail>info@daanvanberkel.nl</authorEmail>
     <authorUrl>http://www.daanvanberkel.nl</authorUrl>
-    <version>1.0.6</version>
+    <version>1.0.7</version>
     <creationDate>2017-01-29</creationDate>
     <license>MIT</license>
     <copyright>Daan van Berkel 2017</copyright>
@@ -48,13 +48,10 @@
                     default="100vh" />
 
                 <field
-                    type="list"
+                    type="text"
                     name="font"
                     label="Font"
-                    default="Arial, sans-serif">
-                        <option value="Arial, sans-serif">Arial</option>
-                        <option value="'Courier New', monospace">Courier New</option>
-                </field>
+                    default="Arial, sans-serif"/>
 
                 <field
                     type="color"
