@@ -9,6 +9,7 @@ $font = $params->get('font', 'Arial, sans-serif');
 $font_color = $params->get('font_color', '#000000');
 $font_size = $params->get('font_size', '50px');
 $parallax = (bool) $params->get('parallax', 0);
+$custom_css = $params->get('custom_css', null);
 $module_id = $module->id;
 
 // If the height is numeric, make it pixels
@@ -24,7 +25,13 @@ if (is_numeric($font_size)) {
 // Add style for this module to the head
 JFactory::getDocument()->addStyleDeclaration("
 #mod_big_image_" . $module_id . " {height: " . $height . "}
-" . ($parallax ? '#mod_big_image_' . $module_id . ' .big_image {background-attachment: fixed}' : '') . "
+
+#mod_big_image_" . $module_id . " .big_image {
+    background-image: url('" . JUri::base() . $params->get('image') . "');
+    " . ($parallax ? 'background-attachment: fixed;' : '') . "
+    " . (!empty($custom_css) ? $custom_css : '') . "
+}
+
 #mod_big_image_" . $module_id . " .big_image_content {
     font-family: " . $font . ";
     color: " . $font_color . ";
