@@ -4,7 +4,7 @@
     <author>Daan van Berkel</author>
     <authorEmail>info@daanvanberkel.nl</authorEmail>
     <authorUrl>http://www.daanvanberkel.nl</authorUrl>
-    <version>1.0.3</version>
+    <version>1.0.4</version>
     <creationDate>2017-01-28</creationDate>
     <license>MIT</license>
     <copyright>Daan van Berkel 2017</copyright>
@@ -14,7 +14,6 @@
         <filename>mod_big_image.xml</filename>
         <filename module="mod_big_image">mod_big_image.php</filename>
         <filename>index.html</filename>
-        <filename>helper.php</filename>
         <filename>tmpl/default.php</filename>
         <filename>tmpl/index.html</filename>
         <filename>README.md</filename>
