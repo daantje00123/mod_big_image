@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.6.5" client="site" method="upgrade">
+    <name>mod_big_image</name>
+    <author>Daan van Berkel</author>
+    <authorEmail>info@daanvanberkel.nl</authorEmail>
+    <authorUrl>http://www.daanvanberkel.nl</authorUrl>
+    <version>1.0.1</version>
+    <creationDate>2017-01-28</creationDate>
+    <license>MIT</license>
+    <copyright>Daan van Berkel 2017</copyright>
+    <description>Big image module.</description>
+
+    <files>
+        <filename>mod_big_image.xml</filename>
+        <filename module="mod_big_image">mod_big_image.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+    </files>
+
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field
+                    type="text"
+                    name="content"
+                    label="Content"
+                    size="50"
+                    maxlength="50"
+                    required="required" />
+
+                <field
+                    type="media"
+                    name="image"
+                    label="Image"
+                    preview="true"
+                    directory="big_image"
+                    required="required" />
+
+                <field
+                    type="text"
+                    name="height"
+                    label="Height"
+                    size="10"
+                    maxlength="10"
+                    default="100vh" />
+
+                <field
+                    type="list"
+                    name="font"
+                    label="Font"
+                    default="Arial, sans-serif">
+                        <option value="Arial, sans-serif">Arial</option>
+                        <option value="'Courier New', monospace">Courier New</option>
+                </field>
+
+                <field
+                    type="color"
+                    name="font_color"
+                    default="#000000"
+                    label="Font color" />
+
+                <field
+                    type="text"
+                    name="font_size"
+                    default="50px"
+                    label="Font size" />
+            </fieldset>
+        </fields>
+    </config>
+</extension>

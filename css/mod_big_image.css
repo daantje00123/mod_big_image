@@ -1,0 +1,15 @@
+.mod_big_image {
+    display: table;
+    width: 100%;
+}
+
+.mod_big_image .big_image {
+    display: table-cell;
+    vertical-align: middle;
+    background-position: center center;
+    background-size: cover;
+}
+
+.mod_big_image .big_image_content {
+    text-align: center;
+}
