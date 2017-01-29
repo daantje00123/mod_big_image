@@ -8,6 +8,7 @@
     vertical-align: middle;
     background-position: center center;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .mod_big_image .big_image_content {
